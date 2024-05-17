@@ -1,0 +1,28 @@
+{
+  "name": "submission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "npx newman run postman/\"Bookshelf API Test\".postman_collection.json --environment postman/\"Bookshelf API Test\".postman_environment.json",
+    "lint": "npx eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.9",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "newman": "^6.1.2",
+    "nodemon": "^3.1.0"
+  }
+}
